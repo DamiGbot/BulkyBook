@@ -18,5 +18,24 @@ namespace BulkyBookWeb.Controllers
             List<Category> objCategoryList = _context.Categories.ToList();
             return View(objCategoryList);
         }
+
+        //GET 
+        public IActionResult Create()
+        {   
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] //helps to prevent cross site request forgery
+        public IActionResult Create(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Categories.Add(category);
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Category");
+            }
+            return View(category);
+        }
     }
 }

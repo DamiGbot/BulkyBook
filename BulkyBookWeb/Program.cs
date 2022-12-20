@@ -1,4 +1,5 @@
 using BulkyBookWeb.Data;
+using BulkyBookWeb.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace BulkyBookWeb
@@ -14,6 +15,7 @@ namespace BulkyBookWeb
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             var app = builder.Build();
 

@@ -1,6 +1,6 @@
-﻿using BulkyBookWeb.Models;
+﻿using BulkyBook.Models;
 
-namespace BulkyBookWeb.Repository
+namespace BulkyBook.DOA.Repository
 {
     public interface ICategoryRepository
     {

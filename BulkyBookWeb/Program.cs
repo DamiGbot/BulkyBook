@@ -1,5 +1,5 @@
-using BulkyBookWeb.Data;
-using BulkyBookWeb.Repository;
+using BulkyBook.DOA.Data;
+using BulkyBook.DOA.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace BulkyBookWeb

@@ -1,7 +1,7 @@
-﻿using BulkyBookWeb.Data;
-using BulkyBookWeb.Models;
+﻿using BulkyBook.DOA.Data;
+using BulkyBook.Models;
 
-namespace BulkyBookWeb.Repository
+namespace BulkyBook.DOA.Repository
 {
     public class CategoryRepository : ICategoryRepository
     {

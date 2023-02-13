@@ -1,6 +1,5 @@
-﻿using BulkyBookWeb.Data;
-using BulkyBookWeb.Models;
-using BulkyBookWeb.Repository;
+﻿using BulkyBook.DOA.Repository;
+using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyBookWeb.Controllers

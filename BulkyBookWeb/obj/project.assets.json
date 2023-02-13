@@ -3694,6 +3694,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "BulkyBook.DOA/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BulkyBook.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBook.DOA.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.DOA.dll": {}
+        }
+      },
+      "BulkyBook.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        }
       }
     }
   },
@@ -10499,10 +10525,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "BulkyBook.DOA/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.DOA/BulkyBook.DOA.csproj",
+      "msbuildProject": "../BulkyBook.DOA/BulkyBook.DOA.csproj"
+    },
+    "BulkyBook.Models/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Models/BulkyBook.Models.csproj",
+      "msbuildProject": "../BulkyBook.Models/BulkyBook.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BulkyBook.DOA >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
@@ -10535,7 +10572,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tunde\\Documents\\1 Enterprise Applicaion Software\\Asp.Net\\BulkyBook\\BulkyBook.DOA\\BulkyBook.DOA.csproj": {
+              "projectPath": "C:\\Users\\tunde\\Documents\\1 Enterprise Applicaion Software\\Asp.Net\\BulkyBook\\BulkyBook.DOA\\BulkyBook.DOA.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
